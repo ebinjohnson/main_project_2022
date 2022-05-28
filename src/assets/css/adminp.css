@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 2%;
+  background-color: black;
+  color: blanchedalmond;
+}
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(4, 1, 32, 0.87);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+/* Style sidebar links */
+.sidebar a,
+p {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: blanchedalmond;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #1da0f2;
+  box-shadow: 1px 2px 4px;
+}
+.sidebar .active {
+  color: #1da0f2;
+}
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 0px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+.Header {
+  background: #1da0f2;
+  display: block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Header a {
+  size: 200%;
+  justify-content: end;
+  color: darkgrey;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 45%;
+  margin: 5%;
+  margin-left: 20%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-details {
+  padding: 2px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.card-details table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.card-details td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.card-details tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.main-box {
+  display: block;
+  justify-content: stretch;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  align-items: end;
+}
+
+.action-icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.action-icon i {
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ffff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  align-items: stretch;
+}
+.cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: -20%;
+}
+.card1,
+.card2 {
+  max-width: 100px;
+  background-color: #ffff;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px;
+  background-color: #ffff; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.active {
+  background-color: white;
+  border-bottom: 1px solid black;
+  color: aqua;
+}
